@@ -43,7 +43,6 @@ jacoco.exec
 bin/
 gen/
 out
-lib
 
 # Eclipse project files（使用eclipse工程的一些文件）
 .classpath

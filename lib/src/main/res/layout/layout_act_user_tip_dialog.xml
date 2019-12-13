@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/act_user_tip_ll_mark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"></LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/act_user_tip_ll_content"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_wxcode_tip_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="重要提示"
+            android:textColor="#333333" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:paddingTop="15dp"
+            android:paddingRight="25dp"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingBottom="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="在使用蜗牛网络诊断各项产品和服务前，请您务必仔细阅读并理解本协议政策，特别是粗体标识的条款，您应重点阅读，在确认充分理解并同意后再开始使用。\n\n为更好保障用户的合法权益，我们依据最新的监管要求对蜗牛网络诊断的隐私政策进行了更新，基于我们向您提供的各项产品/服务的具体功能，细化明确我们收集和使用信息的范围和方式。\n\n感谢您对蜗牛网络诊断的支持和关注！"
+            android:textColor="#333333" />
+
+
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="同意并使用"
+            android:background="@drawable/shape_act_userys_agree"
+            android:textColor="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/act_login_ll_xyys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/act_user_tv_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击查看 "
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/act_user_tv_ys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/act_user_tv_look"
+                android:text="《蜗牛网络诊断隐私政策》"
+                android:textColor="#FF5A00"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/act_user_tv_xy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/act_user_tv_ys"
+                android:layout_toRightOf="@id/act_user_tv_look"
+                android:text="《蜗牛网络诊断用户协议》"
+                android:textColor="#FF5A00"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
